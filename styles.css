@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: Roboto, Arial, sans-serif;
+    background: radial-gradient(circle, #89253e, #3a6186);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* This is where the reset end */
+
+:root {
+    --primary-color: rgba(255, 255, 255, 1);
+    --primary-border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    background: linear-gradient(90deg, #89253e 0%, #3a6186 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.header li a {
+    border: var(--primary-border);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    color: var(--primary-color);
+    transition: opacity 0.25s;
+}
+
+.header li a:hover {
+    opacity: 0.6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#home,
+#about,
+#work,
+#resume,
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: var(--primary-border);
+}
+
+#home h1 {
+    font-size: 50px;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+li,
+tr,
+label,
+input {
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact label {
+    margin-bottom: 0.5rem;
+}
+
+#contact input,
+#message {
+    border: var(--primary-border);
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+
+#contact input[type="submit"] {
+    width: 50%;
+}
+
+input[type="submit"] {
+    transition: opacity 0.25s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.7;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

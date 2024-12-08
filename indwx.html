@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Creative Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedgwick+Ave+Display&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <ul class="header">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Home Section -->
+            <section id="home">
+                <h1>Hellow There c:</h1>
+                <p>here is a quick video. Enjoy :D</p>
+                <video controls>
+                    <source src="LeoLeoLeo.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I'm a web developer with a passion for creating interactive and responsive
+                    websites.
+                </p>
+                <ul>
+                    <li>Frontend Development</li>
+                    <li>Gamer</li>
+                    <li>Cat Lover c:</li>
+                </ul>
+            </section>
+
+            <!-- Work Section -->
+            <section id="work">
+                <h2>My Work</h2>
+                <table>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                        <th>Link</th>
+                    </tr>
+                    <tr>
+                        <td>landing page</td>
+                        <td>
+                            A work in progress landing page that if i do not finish it this weekend
+                            my instructor will k@#! me.
+                        </td>
+                        <td>
+                            <a href="https://github.com/aslxlce/Landing-page02" target="_blank"
+                                >Visit</a
+                            >
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Resume Section -->
+            <section id="resume">
+                <h2>My Resume</h2>
+                <p>Download my resume below:</p>
+                <a href="resume.pdf" download>Download Resume</a>
+            </section>
+
+            <!-- Contact Section (HTML Form) -->
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required /><br /><br />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required /><br /><br />
+
+                    <label for="message">Message:</label><br />
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea
+                    ><br /><br />
+
+                    <input type="submit" value="Send Message" />
+                </form>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 My Portfolio | All rights reserved</p>
+            <p>
+                <a href="https://www.instagram.com/_aslxlce_/" target="_blank">Instagram</a> |
+                <a href="https://github.com/aslxlce" target="_blank">GitHub</a> |
+                <a href="https://wa.me/00213560936063" target="_blank">WhatsApp</a>
+            </p>
+        </footer>
+    </body>
+</html>
